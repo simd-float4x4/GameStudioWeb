@@ -4,8 +4,8 @@ window.addEventListener('DOMContentLoaded', init);
 function init() {
 
   // サイズを指定
-  const width = window.innerWidth;
-  const height = window.innerHeight;
+  const width = document.documentElement.clientWidth;
+  const height = document.documentElement.clientHeight;
 
   // レンダラーを作成
   const renderer = new THREE.WebGLRenderer({
