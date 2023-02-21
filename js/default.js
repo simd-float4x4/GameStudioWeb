@@ -29,7 +29,7 @@ function init() {
   // 描画領域の半径
   const r = 75;
   // 線を消去する距離
-  const connectionDistance = 16;
+  const connectionDistance = 14;
   //最大速度の設定
   const maxVelocity = 0.2;
   // 点のデザイン
@@ -103,7 +103,8 @@ function init() {
       particlePositions[i*3+1] += particleVelocity[i].y;
       particlePositions[i*3+2] += particleVelocity[i].z;
   
-      // 折り返し判定
+      // 折り返し判定（PONGの要領でゴリ押す）
+      // TODO: rHarf = r / PIにすることで円周上の判定は作れるが、跳ね返し方がわからない
       if(particlePositions[i*3] < -rHarf*2.0 || particlePositions[i*3] > rHarf*2.0){
         particleVelocity[i].x *= -1;
       }
@@ -116,7 +117,7 @@ function init() {
         particleVelocity[i].z *= -1;
       }
   
-      // 全配列検索：全部の頂点の値の距離を調べる
+      // 全配列検索：全部の頂点の値の距離(移動量)を調べる
       for(let j = i + 1; j < particleCount; j++){
         let dx = particlePositions[i*3]-particlePositions[j*3];
         let dy = particlePositions[i*3+1]-particlePositions[j*3+1];

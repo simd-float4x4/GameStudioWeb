@@ -1,0 +1,55 @@
+/* header
+------------------------------ */
+
+#myCanvas {
+    position: relative;
+    z-index: 0;
+}
+
+#header {
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 999;
+}
+  
+#header .wrapper {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px;
+}
+
+#header p {
+    margin: 22px 0 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    float: left;
+}
+
+#header p a {
+    text-decoration: none;
+    color: white;
+}
+
+#header ul {
+    margin: 28px 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    float: right;
+    list-style: none;
+}
+
+#header ul li {
+    float: left;
+    margin-right: 40px;
+}
+
+#header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#header ul li:last-child {
+    margin-right: 0;
+}
