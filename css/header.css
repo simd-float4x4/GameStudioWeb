@@ -7,16 +7,12 @@
 }
 
 #header {
-    width: 100%;
+    margin: 0 15%;
+    width: 70%;
     position: absolute;
     background-color: transparent;
+    z-index: 0;
 }
-  
-.glitch a {
-    text-decoration: none;
-    color: white;
-}
-
 
 #header .wrapper {
     margin: 0 auto;
@@ -27,11 +23,15 @@
     color: white;
 }
 
-.logo {
+#header p {
+    float: left;
     margin: 22px 0 0;
     font-size: 1.4rem;
     font-weight: 700;
-    float: left;
+}
+
+#header p a {
+    text-decoration: none;
     color: white;
 }
 
