@@ -3,32 +3,35 @@
 
 #myCanvas {
     position: relative;
-    z-index: 0;
+    z-index: -99999;
 }
 
 #header {
     width: 100%;
     position: absolute;
     background-color: transparent;
-    z-index: 999;
 }
   
+.glitch a {
+    text-decoration: none;
+    color: white;
+}
+
+
 #header .wrapper {
     margin: 0 auto;
     overflow: hidden;
     width: 100%;
     max-width: 1000px;
+    text-decoration: none;
+    color: white;
 }
 
-#header p {
+.logo {
     margin: 22px 0 0;
     font-size: 1.4rem;
     font-weight: 700;
     float: left;
-}
-
-#header p a {
-    text-decoration: none;
     color: white;
 }
 

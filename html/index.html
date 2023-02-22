@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="../css/styles/reset.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
   <link rel="stylesheet" href="../css/default.css" />
   <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/glitch.css"/>
 </head>
 <body>
   <div id="header" style="background-color: transparent;">
-    <div class="wrapper">
-      <p class="logo"><a href="#">PROFILE</a></p>
+    <div class="wwrapper">
+      <p class="logo glitch" data-text="glitch">
+        <a href="#">glitch</h1>
+      </p>
+      
       <nav>
         <ul>
           <li><a href="#">ABOUT</a></li>
@@ -21,8 +25,16 @@
 
   <canvas id="myCanvas"></canvas>
 
+  <div id="app">
+    <div id="wrapper">
+      <!-- Make sure data-text equals the text you put inside the tags. -->
+      <h1 class="glitch" data-text="glitch">glitch</h1>
+      <span class="sub">EFFECT</span>
+    </div>
+  </div>
+
   <meta charset="utf-8"/>
   <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
-  <script src="../js/default.js"></script>
+  <script src="../js/three.js"></script>
 </body>
 </html>
