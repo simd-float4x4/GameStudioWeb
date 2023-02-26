@@ -1,6 +1,7 @@
 /* header
 ------------------------------ */
 
+
 #myCanvas {
     z-index: -99999;
     position:fixed;
@@ -13,6 +14,8 @@
 #header {
     z-index: 0;
     height: 75px;
+    font-family: 'Oswald', sans-serif;
+
 }
 
 #header .wrapper {
@@ -25,7 +28,7 @@
     float: left;
     margin: 22px 0 0;
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: 300;
 }
 
 #header p a {
@@ -77,6 +80,11 @@
     display: -o-flex;
     display: flex;
 }
+
+.flex-container{
+    justify-content: center;
+    align-items: center;
+}  
 
 .logo {
     float: left;
