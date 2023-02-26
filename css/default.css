@@ -6,3 +6,14 @@ body {
     overflow: hidden;
 }
 
+.content {
+    background-color: lightblue;
+}
+
+.container-left {
+    background-color: lightgreen;
+}
+
+.container-right {
+    background-color: lightslategray;
+}
