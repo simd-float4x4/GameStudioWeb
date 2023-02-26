@@ -7,19 +7,16 @@
 }
 
 #header {
-    margin: 0 15%;
-    width: 70%;
+    width: 80vw;
     position: absolute;
-    background-color: coral;
     z-index: 0;
 }
 
 #header .wrapper {
-    margin: 0 auto;
     overflow: hidden;
+    margin: 0 auto;
     width: 100%;
     max-width: 1000px;
-    text-decoration: none;
 }
 
 #header p {
@@ -56,14 +53,33 @@
     margin-right: 0;
 }
 
+.header {
+    height: 75px;
+    background-color: lightskyblue;
+    margin: 0 10vw;
+}
+
 .container {
-    z-index: 10;
-    background-color: transparent;
-    color: white;
-    text-align: center;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
+    background-color: coral;
+    height: calc(100vh - 75px);
+    margin: 0 10vw;
+}
+
+.container .left {
+    background-color: gold;
+    width: 50vw;
+
+}
+
+.container .right {
+    background-color: greenyellow;
+    width: 30vw;
+}
+
+.flex{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
 }
