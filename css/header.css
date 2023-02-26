@@ -1,6 +1,9 @@
 /* header
 ------------------------------ */
 
+body {
+    background-color: black;
+}
 
 #myCanvas {
     z-index: -99999;
@@ -45,6 +48,7 @@
 }
 
 #header ul li {
+    position: relative;
     float: left;
     margin-right: 40px;
 }
@@ -52,6 +56,20 @@
 #header ul li a {
     color: white;
     text-decoration: none;
+}
+
+#header ul li:hover:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 8px;
+    border-color: transparent transparent transparent white;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -6px;
+    margin-left: -15px;
 }
 
 #header ul li:last-child {
@@ -65,12 +83,13 @@
 }
 
 .container .left {
-    width: 50vw;
-
+    height: calc(100vh - 75px);
+    width: 60vw;
 }
 
 .container .right {
-    width: 30vw;
+    height: calc(100vh - 75px);
+    width: 20vw;
 }
 
 .flex{
@@ -82,9 +101,19 @@
 }
 
 .flex-container{
-    justify-content: center;
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
     align-items: center;
 }  
+
+.flex-container p {
+   line-height: 100px;
+   font-size: 60px;
+   padding: 16px;
+   font-family: sans-serif;
+   font-weight: 600;
+}
 
 .logo {
     float: left;
