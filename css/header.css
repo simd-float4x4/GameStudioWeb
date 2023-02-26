@@ -11,15 +11,14 @@
 }
 
 #header {
-    width: 80vw;
     z-index: 0;
+    height: 75px;
 }
 
 #header .wrapper {
     overflow: hidden;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1000px;
+    width: 80vw;
+    margin: 0 10vw;
 }
 
 #header p {
@@ -56,11 +55,6 @@
     margin-right: 0;
 }
 
-.header {
-    height: 75px;
-    margin: 0 10vw;
-}
-
 .container {
     height: calc(100vh - 75px);
     margin: 0 10vw;
@@ -82,4 +76,8 @@
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+}
+
+.logo {
+    float: left;
 }
