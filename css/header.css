@@ -173,3 +173,22 @@ body {
 .product_row > div {
     padding: 10px;
 }
+
+.hidden{
+   display: none;
+   visibility: hidden;
+}
+
+.inside-container {
+    color: white;
+}
+
+.inside-container .left {
+    width: 45%;
+    height: 100%;
+}
+
+.inside-container .right {
+    width: 55%;
+    height: 100%;
+}
