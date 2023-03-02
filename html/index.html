@@ -13,20 +13,20 @@
   <div id="header" class="header">
     <div class="wrapper">
       <p class="logo glitch" data-text="HOGE GAMESTUDIO">
-        <a href="#">HOGE GAMESTUDIO</h1>
+        <a href="#" onclick="myFunction('top')">HOGE GAMESTUDIO</h1>
       </p>
   
       <nav>
         <ul>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">PRODUCT</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#" onclick="myFunction('about')">ABOUT</a></li>
+          <li><a href="#" onclick="myFunction('product')">PRODUCT</a></li>
+          <li><a href="#" onclick="myFunction('contact')">CONTACT</a></li>
         </ul>
       </nav>
     </div>
   </div>
   
-  <div class="hidden">
+  <div id="top">
     <div class="container flex">
       <div class="left">
         <div class="flex-container">
@@ -41,7 +41,7 @@
     </div>
   </div>
 
-  <div class="about hidden">
+  <div id="about" class="about hidden">
     <div class="container">
       <div class="full-container">
         <div class="top">
@@ -66,7 +66,7 @@
     </div>
   </div>
 
-  <div class="hidden">
+  <div id="product" class="hidden">
     <div class="container">
       <div class="full-container">
         <div class="top">
@@ -86,7 +86,7 @@
     </div>
   </div>
 
-  <div class="">
+  <div id="contact" class="hidden">
     <div class="container">
       <div class="full-container">
           <div class="top">
@@ -126,5 +126,6 @@
   <meta charset="utf-8"/>
   <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
   <script src="../js/three.js"></script>
+  <script src="../js/header.js"></script>
 </body>
 </html>
