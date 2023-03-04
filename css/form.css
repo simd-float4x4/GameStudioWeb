@@ -91,6 +91,19 @@
     }
 }
 
+.Form-Item-Input-2 {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 40px;
+    flex: 1;
+    width: 150%;
+    max-width: 435px;
+    background: #eaedf2;
+    font-size: 16px;
+}
 
 .Form-Item-Input {
     border: 1px solid #ddd;
