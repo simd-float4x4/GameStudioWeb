@@ -10,8 +10,10 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
   </style>
+  <meta name="description" content="『インディーズゲームで、世界を一歩ずつ、もっとおもしろく。』。個人開発エンジニア・ましゅうによる、インディーズゲーム製作プロジェクトの公式ホームページ。">
 </head>
 <body>
+  <canvas id="myCanvas"></canvas>
   <div id="header" class="header">
     <div class="wrapper">
       <p class="logo glitch" data-text="HOGE GAMESTUDIO">
@@ -68,7 +70,7 @@
             <div class="sns-container">
               <div id="sns-twitter" class="sns-icon">
                 <div class="middle-border"></div>
-                <a href="https://twitter.com/Tim_Leitch_2023">
+                <a href="https://twitter.com/ASOBU_JP">
                   <i class="fa-brands fa-twitter"></i>
                 </a>
               </div>
@@ -104,7 +106,7 @@
                       <table class="profile-sns-icon-list">
                         <tr>
                           <td>
-                            <a href="https://twitter.com/ASOBU_JP">
+                            <a href="https://twitter.com/Tim_Leitch_2023">
                               <i class="fa-brands fa-twitter"></i>
                             </a>
                           </td>
@@ -122,44 +124,6 @@
     </div>
   </div>
   
-
-  <!-- <div id="about" class="about hidden">
-    <div class="container">
-      <div class="full-container">
-        <div class="top">
-          <p>ABOUT</p>
-        </div>
-        <div class="bottom">
-            <div class="">
-              <p>
-                HOGE GAMESTUDIOは、***をテーマに、2023年に設立されたインディーズゲームスタジオである。<br>
-                個人開発のスピード感と小回りの効きやすさを武器に、<br>
-                新規IPの創出及びキャラクターを使ったメディアミックス展開を行っていく。<br>
-
-                現在は、その先駆けとなるプロジェクト「*****」の2023年リリースに向け、鋭意開発中を行っている。
-              </p>
-              <img src="../resources/img/profile_Mathew.png">
-              <p>MEMBER</p>
-              <p>ましゅう／Mathew</p>
-              <p>1998年兵庫県生まれ。学生時代よりiOS開発/Web開発/ゲーム開発などに取り組み、2019年には自身初となるSwift製のiOS専用アプリゲームをリリースした。現在はUnity製ゲームの製作に取り組んでおり、その活動の延長線上として「HOGE GAMESTUDIO」を設立。2023年内のリリースに向けて鋭意製作中。</p>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- モーダル本体 -->
-  <div class="modal-container">
-    <div class="modal-body">
-      <!-- 閉じるボタン -->
-      <div class="modal-close">×</div>
-      <!-- モーダル内のコンテンツ -->
-      <div class="modal-content">
-        <p>文章が入ります。</p>
-      </div>
-    </div>
-  </div>
-
   <div id="product" class="hidden">
     <div class="container">
       <div class="full-container">
@@ -336,7 +300,7 @@
     </div>
   </div>
 
-  <canvas id="myCanvas"></canvas>
+ 
 
   <footer>
     © 2021-2023, HOGE GAMESTUDIO All Rights Reserved.
@@ -344,6 +308,7 @@
 
   <meta charset="utf-8"/>
   <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="../js/three.js"></script>
   <script src="../js/header.js"></script>
   <script src="../js/form.js"></script>

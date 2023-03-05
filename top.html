@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../css/reset.css"/>
+  <link rel="stylesheet" href="../css/glitch.css"/>
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+  </style>
+  <meta charset="utf-8"/>
+  <meta name="description" content="『インディーズゲームで、世界を一歩ずつ、もっとおもしろく。』。個人開発エンジニア・ましゅうによる、インディーズゲーム製作プロジェクトの公式ホームページ。">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+  <canvas id="myCanvas"></canvas>
+  <div id="header"></div>
+  <div id="top">
+    <div class="container flex">
+      <div class="left">
+        <div class="flex-container">
+          <p>
+            インディーズゲームで<br>
+            世界を一歩ずつ、<br>
+            もっと面白く。
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="footer-fixed"></div>
+  </div>
+  <script>
+    $(function(){
+        $('#header').load('header.html');
+        $('#footer-fixed').load('footer.html');
+    });
+  </script>
+  <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
+  <script src="../js/three.js"></script>
+</body>
+</html>
