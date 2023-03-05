@@ -171,13 +171,6 @@ body {
     text-align: center;
 }
 
-.bottom img {
-    width: 200px;
-    height: 200px;
-    border: 5px solid white;
-    box-shadow: 0px 0px 30px tomato;
-}
-
 .logo {
     float: left;
 }
@@ -355,6 +348,33 @@ body {
     height: 100%;
 }
 
+.member-introduction-area {
+    width: 566px;
+    height: 350px;
+    margin-bottom: 32px;
+    background: 
+        linear-gradient(135deg, #90BCD3 15%, transparent 0),
+        linear-gradient(-45deg, #90BCD3 5%, transparent 0);
+    background-color: #54647C;
+    border: 5px solid #90BCD3;
+    box-shadow: 0px 0px 130px white;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0.7;
+}
+
+.member-introduction-inside-area {
+    border: 2px solid #90BCD3;
+    margin: 5px;
+    height: calc(100% - 14px);
+    width: calc(100% - 14px);
+}
+
+.member-introduction-inside-area img {
+    width: 100%;
+    margin: auto;
+}
+
 .sns-container {
     width: 100%;
     display: flex;
@@ -381,7 +401,7 @@ body {
     border-left: 2px solid #1DA1F2;
     border-radius: 50%;
     z-index: -1;
-    animation: rotate-border 10s linear infinite;
+    animation: rotate-border 6s linear infinite;
 }
 
 #sns-twitter:after {
@@ -414,9 +434,8 @@ body {
     border-left: 1px solid #1DA1F2;
     border-radius: 50%;
     z-index: -1;
-    animation: rotate-border 10s linear infinite;
+    animation: rotate-border 8s linear infinite;
   }
-  
 
 @keyframes rotate-border {
     from {
@@ -508,6 +527,48 @@ body {
     background-color: turquoise;
     background:linear-gradient(90deg, #141126 0%, #141126 45%, white 90%, white 100%); 
     opacity: 0.5;
+}
+
+.top-rotating-circle {
+    width: 50vh;
+    height: 50vh;
+    margin-top: 12.5vh;
+    border: 15px solid #1DA1F2;
+    border-top: 15px solid rgba(255, 255, 255, 0.2);
+    border-right: 15px solid #1DA1F2;
+    border-bottom: 15px solid #1DA1F2;
+    border-left: 15px solid #1DA1F2;
+    border-radius: 50%;
+}
+
+.profile-profile {
+    line-height: 1.5em !important;
+    font-size: 14px !important;
+    padding: 4px;
+    font-weight: lighter;
+    font-family: 'Oswald', sans-serif;
+    text-align: justify;
+}
+
+.profile-sns-icon-list {
+    margin-left: 16px;
+}
+
+.w-30 {
+    width: 50%;
+}
+
+.w-30 img {
+    width: 100%;
+    height: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-70 {
+    width: 50%;
 }
 
 .w-100 {
