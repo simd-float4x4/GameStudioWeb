@@ -455,6 +455,11 @@ body {
     position: relative;
 }
 
+.sns-icon a:link, .sns-icon a:visited, .sns-icon a:hover, .sns-icon a:active {
+    color: white;
+    text-decoration: none;
+}
+
 .sns-icon i {
     position: absolute;
     display: flex;
@@ -552,6 +557,11 @@ body {
 
 .profile-sns-icon-list {
     margin-left: 16px;
+}
+
+.profile-sns-icon-list a:link, .profile-sns-icon-list a:visited, .profile-sns-icon-list a:hover, .profile-sns-icon-list a:active {
+    color: white;
+    text-decoration: none;
 }
 
 .w-30 {
