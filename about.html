@@ -4,23 +4,25 @@
   <link rel="stylesheet" href="../css/reset.css"/>
   <link rel="stylesheet" href="../css/glitch.css"/>
   <link rel="stylesheet" href="../css/header.css" />
-  <link rel="stylesheet" href="../css/form.css" />
   <link rel="stylesheet" href="../css/footer.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
   </style>
+  <meta charset="utf-8"/>
   <meta name="description" content="『インディーズゲームで、世界を一歩ずつ、もっとおもしろく。』。個人開発エンジニア・ましゅうによる、インディーズゲーム製作プロジェクトの公式ホームページ。">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
   <canvas id="myCanvas"></canvas>
+  <div id="header"></div>
   <div id="about" class="about">
     <div class="container">
       <div class="full-container">
         <div class="top">
           <p>ABOUT</p>
         </div>
-        <div class="bottom"></div>
+        <div class="bottom">
           <p>
             個人開発エンジニア・ましゅうによる、インディーズゲーム製作プロジェクト。<br>
             個人開発のならではのスピード感と小回りの効きやすさを武器に、次世代の日本を代表する新規IP/キャラクターの創出及びメディアミックス展開を行っていく。
@@ -78,44 +80,18 @@
               </div>
             </div>
           </div>
+          <div id="footer"></div>
         </div>
       </div>
     </div>
   </div>
-  <footer>
-    © 2021-2023, HOGE GAMESTUDIO All Rights Reserved.
-  </footer>
-
-  <meta charset="utf-8"/>
+  <script>
+    $(function(){
+        $('#header').load('header.html');
+        $('#footer').load('footer.html');
+    });
+  </script>
   <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="../js/three.js"></script>
-  <script src="../js/header.js"></script>
-  <script src="../js/form.js"></script>
 </body>
 </html>
-
-<!-- <div id="about" class="about hidden">
-    <div class="container">
-      <div class="full-container">
-        <div class="top">
-          <p>ABOUT</p>
-        </div>
-        <div class="bottom">
-            <div class="">
-              <p>
-                HOGE GAMESTUDIOは、***をテーマに、2023年に設立されたインディーズゲームスタジオである。<br>
-                個人開発のスピード感と小回りの効きやすさを武器に、<br>
-                新規IPの創出及びキャラクターを使ったメディアミックス展開を行っていく。<br>
-
-                現在は、その先駆けとなるプロジェクト「*****」の2023年リリースに向け、鋭意開発中を行っている。
-              </p>
-              <img src="../resources/img/profile_Mathew.png">
-              <p>MEMBER</p>
-              <p>ましゅう／Mathew</p>
-              <p>1998年兵庫県生まれ。学生時代よりiOS開発/Web開発/ゲーム開発などに取り組み、2019年には自身初となるSwift製のiOS専用アプリゲームをリリースした。現在はUnity製ゲームの製作に取り組んでおり、その活動の延長線上として「HOGE GAMESTUDIO」を設立。2023年内のリリースに向けて鋭意製作中。</p>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
