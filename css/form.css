@@ -174,3 +174,104 @@
         font-size: 16px;
     }
 }
+
+
+.profile-profile {
+    line-height: 1.5em !important;
+    font-size: 14px !important;
+    padding: 4px;
+    font-weight: lighter;
+    font-family: 'Oswald', sans-serif;
+    text-align: justify;
+}
+
+.profile-sns-icon-list {
+    margin-left: 16px;
+}
+
+.profile-sns-icon-list a:link, .profile-sns-icon-list a:visited, .profile-sns-icon-list a:hover, .profile-sns-icon-list a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.select-user-type-button {
+    width: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 8px;
+    border-radius: 5px;
+    background-color: lightgray;
+    color: darkgray;
+}
+
+.select-user-type-button-activated {
+    width: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 8px;
+    border-radius: 5px;
+    background-color: #5bc8ac;
+    color: white;
+}
+
+.submit-button {
+    width: 200px;
+    height: 35px;
+    font-size: 11px;
+    background-color: #141126;
+    border-radius: 2px;
+    border: 1px solid turquoise;
+    position: relative;
+    box-shadow: 0px 0px 5px turquoise;
+    margin: 30px auto;
+}
+
+.submit-button p {
+    z-index: 999;
+    position: absolute;
+    color: white;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 18px;
+    box-shadow: 0px 0px 7px white;
+    border-bottom: 2.3px solid white;
+}
+
+.submit-button-overlayered-z5 {
+    width: 200px;
+    height: 35px;
+    background:linear-gradient(155deg, #141126 0%, #141126 60%, #FFC778 45%, #FFC778 100%); 
+    opacity: 0.6;
+}
+
+.submit-button-overlayered-z4 {
+    width: 200px;
+    height: 35px;
+    background:linear-gradient(45deg, #141126 0%, #141126 75%, #58b4ea 50%, #58b4ea 100%); 
+    opacity: 0.5;
+}
+
+.submit-button-overlayered-z3 {
+    width: 200px;
+    height: 35px;
+    background-color: turquoise;
+    opacity: 0.8;
+}
+
+.submit-button-overlayered-z2 {
+    width: 200px;
+    height: 35px;
+    background-color: turquoise;
+    background:linear-gradient(90deg, #141126 0%, #141126 35%, turquoise 70%, turquoise 100%); 
+    opacity: 0.5;
+}
+
+.submit-button-overlayered-z1 {
+    width: 200px;
+    height: 35px;
+    background-color: turquoise;
+    background:linear-gradient(90deg, #141126 0%, #141126 45%, white 90%, white 100%); 
+    opacity: 0.5;
+}
