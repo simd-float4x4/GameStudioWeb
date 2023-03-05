@@ -278,12 +278,13 @@
                   <div class="" style="width: 100%;">
                     <div style="width: 100%-40px; margin-left: 40px;">
                       <div class="flex-space-between">
-                        <div class="select-user-type-button">個人</div>
-                        <div class="select-user-type-button">法人</div>
-                        <div class="select-user-type-button">その他</div>
+                        <div id="form-usertype-personal" class="select-user-type-button" onclick="selectUserTypeRadioButton('form-usertype-personal')">個人</div>
+                        <div id="form-usertype-official" class="select-user-type-button" onclick="selectUserTypeRadioButton('form-usertype-official')">法人</div>
+                        <div id="form-usertype-other" class="select-user-type-button" onclick="selectUserTypeRadioButton('form-usertype-other')">その他</div>
                       </div>
                     </div>
                   </div>
+                  <input type="hidden" value="">
                   <!-- <input type="text" class="Form-Item-Input" placeholder="例）株式会社令和"> -->
                 </div>
                 <div class="Form-Item">
@@ -339,5 +340,6 @@
   <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
   <script src="../js/three.js"></script>
   <script src="../js/header.js"></script>
+  <script src="../js/form.js"></script>
 </body>
 </html>
