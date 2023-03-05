@@ -10,10 +10,13 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
   </style>
+  <meta charset="utf-8"/>
   <meta name="description" content="『インディーズゲームで、世界を一歩ずつ、もっとおもしろく。』。個人開発エンジニア・ましゅうによる、インディーズゲーム製作プロジェクトの公式ホームページ。">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
   <canvas id="myCanvas"></canvas>
+  <div id="header"></div>
   <div id="contact">
     <div class="container">
       <div class="full-container">
@@ -85,20 +88,20 @@
                 </div>
               </div>
             </div>
+            <div id="footer"></div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <footer>
-    © 2021-2023, HOGE GAMESTUDIO All Rights Reserved.
-  </footer>
-
-  <meta charset="utf-8"/>
+  <script>
+    $(function(){
+        $('#header').load('header.html');
+        $('#footer').load('footer.html');
+    });
+  </script>
   <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="../js/three.js"></script>
-  <script src="../js/header.js"></script>
   <script src="../js/form.js"></script>
 </body>
 </html>
