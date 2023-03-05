@@ -366,7 +366,7 @@ body {
 }
 
 .hidden{
-   display: none;
+   display: none !important;
 }
 
 .inside-container {
