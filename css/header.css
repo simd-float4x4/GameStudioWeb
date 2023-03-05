@@ -205,6 +205,30 @@ body {
     padding: 4px;
 }
 
+.product_cell_movie_tag {
+    position: absolute;
+    font-weight: bold;
+    bottom: 0px;
+    right: 0px;
+    padding: 4px;
+}
+
+.product_cell_external_tag {
+    position: absolute;
+    font-weight: bold;
+    bottom: 0px;
+    right: 0px;
+    padding: 4px;
+}
+
+.product_cell_external_tag a:active, .product_cell_external_tag a:hover, .product_cell_external_tag a:visited, .product_cell_external_tag a:link {
+    color: white;
+}
+
+.product_cell_movie_tag a:active, .product_cell_movie_tag a:hover, .product_cell_movie_tag a:visited, .product_cell_movie_tag a:link {
+    color: white;
+}
+
 #pt01 {
     background-color: darkgoldenrod;
     color: white;
