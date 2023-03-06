@@ -21,7 +21,7 @@
 @media screen and (min-width:768px) and (max-width:1024px) {
     .product_row {
         display: grid;
-        grid-auto-rows: 13em;
+        grid-auto-rows: 16em;
         grid-gap: 10px;
         padding: 10px;
         overflow: hidden;
@@ -82,6 +82,17 @@
     padding: 4px;
 }
 
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .product_cell_tag {
+        position: absolute;
+        font-weight: bold;
+        font-size: 1.8em;
+        top: 0px;
+        left: 0px;
+        padding: 4px;
+    }
+}
+
 .product_cell_movie_tag {
     position: absolute;
     font-weight: bold;
@@ -96,6 +107,26 @@
     bottom: 0px;
     right: 0px;
     padding: 4px;
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .product_cell_movie_tag {
+        position: absolute;
+        font-weight: bold;
+        bottom: 0px;
+        right: 0px;
+        font-size: 3em;
+        padding: 8px;
+    }
+
+    .product_cell_external_tag {
+        position: absolute;
+        font-weight: bold;
+        bottom: 0px;
+        right: 0px;
+        font-size: 3em;
+        padding: 8px;
+    } 
 }
 
 .product_cell_external_tag a:active, .product_cell_external_tag a:hover, .product_cell_external_tag a:visited, .product_cell_external_tag a:link {
