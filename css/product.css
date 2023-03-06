@@ -11,6 +11,13 @@
     position: relative;
 }
 
+.product_cell .product_link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+}
+
 .product_cell_disabled {
     color: white;
     font-size: 36px;
