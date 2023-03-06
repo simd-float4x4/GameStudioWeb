@@ -80,41 +80,20 @@ body {
     float: left;
 }
 
-.profile-profile {
-    line-height: 1.5em !important;
-    font-size: 14px !important;
-    padding: 4px;
-    font-weight: lighter;
-    font-family: 'Oswald', sans-serif;
-    text-align: justify;
+.header-selected {
+    color: yellow;
 }
 
-.profile-sns-icon-list {
-    margin-left: 16px;
-}
-
-.profile-sns-icon-list a:link, .profile-sns-icon-list a:visited, .profile-sns-icon-list a:hover, .profile-sns-icon-list a:active {
-    color: white;
-    text-decoration: none;
-}
-
-.w-30 {
-    width: 50%;
-}
-
-.w-30 img {
-    width: 100%;
-    height: 100%;
-}
-
-.w-50 {
-    width: 50%;
-}
-
-.w-70 {
-    width: 50%;
-}
-
-.w-100 {
-    width: 100%;
+.header-selected::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 8px;
+    border-color: transparent transparent transparent yellow;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -6px;
+    margin-left: -15px;
 }

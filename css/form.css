@@ -175,25 +175,6 @@
     }
 }
 
-
-.profile-profile {
-    line-height: 1.5em !important;
-    font-size: 14px !important;
-    padding: 4px;
-    font-weight: lighter;
-    font-family: 'Oswald', sans-serif;
-    text-align: justify;
-}
-
-.profile-sns-icon-list {
-    margin-left: 16px;
-}
-
-.profile-sns-icon-list a:link, .profile-sns-icon-list a:visited, .profile-sns-icon-list a:hover, .profile-sns-icon-list a:active {
-    color: white;
-    text-decoration: none;
-}
-
 .select-user-type-button {
     width: 100px;
     font-size: 20px;

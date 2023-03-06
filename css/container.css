@@ -57,25 +57,30 @@
     display: none !important;
  }
  
- .inside-container {
-     color: white;
- }
- 
- .inside-container .left {
-     width: 45%;
-     height: 100%;
- }
- 
- .inside-container .right {
-     width: 55%;
-     height: 100%;
- }
+.inside-container {
+    color: white;
+}
+
+.inside-container .left {
+    width: 45%;
+    height: 100%;
+}
+
+.inside-container .right {
+    width: 55%;
+    height: 100%;
+}
 
 .top {
     width: 100%;
     height: calc(30vh - 75px);
 }
-
+@media screen and (max-width: 480px) {
+    .top {
+        width: 100%;
+        height: calc(30vh - 75px);
+    }
+}
 .top p {
     margin: 0 auto;
     width: 300px;
