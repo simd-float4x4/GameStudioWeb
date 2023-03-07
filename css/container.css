@@ -79,20 +79,14 @@
 
 .top {
     width: 100%;
-    height: calc(10vh - 75px);
+    height: calc(30vh - 75px);
 }
 
-@media screen and (min-width:480px) { 
-    .top {
-        width: 100%;
-        height: calc(30vh - 75px);
-    }
-}
 
 @media screen and (min-width:768px) and (max-width:1024px) {
     .top {
         width: 100%;
-        height: calc(10vh - 75px);
+        height: calc(15vh - 75px);
     }
 }
 
@@ -137,8 +131,14 @@
     width: 100%;
 }
 
-.common-p {
-    font-size: 40px;
-    line-height: 1.2em;
+.common-p{
+    line-height: 1.5em;
     text-align: justify;
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .common-p {
+        font-size: 30px;
+        line-height: 1.2em;
+        text-align: justify;
+    }
 }
