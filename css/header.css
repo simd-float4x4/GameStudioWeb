@@ -46,18 +46,18 @@ body {
     list-style: none;
 }
 
-#header ul li {
+.header-item {
     position: relative;
     float: left;
     margin-right: 40px;
 }
 
-#header ul li a {
+.header-item a {
     color: white;
     text-decoration: none;
 }
 
-#header ul li:hover:before {
+.header-item:hover:before {
     content: '';
     width: 0;
     height: 0;
@@ -71,7 +71,7 @@ body {
     margin-left: -15px;
 }
 
-#header ul li:last-child {
+.header-item:last-child {
     margin-right: 0;
 }
 
@@ -81,6 +81,12 @@ body {
 
 .header-selected {
     color: yellow;
+}
+
+.header-selected a{
+    color: yellow;
+    text-decoration: underline;
+    padding-bottom: 4px;
 }
 
 .header-selected::before {
