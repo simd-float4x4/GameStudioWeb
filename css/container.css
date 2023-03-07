@@ -8,6 +8,12 @@
     height: calc(100vh - 75px);
     width: 60vw;
 }
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .container .left{
+        height: calc(100vh - 75px);
+        width: 90vw;
+    }
+}
 
 .container .right {
     height: calc(100vh - 75px);
@@ -129,4 +135,9 @@
 
 .w-100 {
     width: 100%;
+}
+
+.common-p {
+    font-size: 30px;
+    line-height: 1.2em;
 }

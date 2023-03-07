@@ -58,7 +58,7 @@
         max-width: inherit;
         display: flex;
         align-items: center;
-        font-size: 15px;
+        font-size: 30px;
     }
 }
 .Form-Item-Label.isMsg {
@@ -87,12 +87,12 @@
         border-radius: 4px;
         padding-top: 4px;
         padding-bottom: 4px;
-        width: 32px;
-        font-size: 10px;
+        width: 64px;
+        font-size: 24px;
     }
 }
 
-.Form-Item-Input-2 {
+.Form-Item-Input-Dropdown {
     border: 1px solid #ddd;
     border-radius: 6px;
     margin-left: 40px;
@@ -104,6 +104,22 @@
     max-width: 435px;
     background: #eaedf2;
     font-size: 16px;
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .Form-Item-Input-Dropdown {
+        margin-left: 0;
+        margin-top: 18px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding-left: 1em;
+        padding-right: 1em;
+        height: 50px;
+        flex: 1;
+        width: 100%;
+        max-width: 100%;
+        background: #eaedf2;
+        font-size: 20px;
+    }
 }
 
 .Form-Item-Input {
@@ -123,9 +139,6 @@
     .Form-Item-Input {
         margin-left: 0;
         margin-top: 18px;
-        height: 40px;
-        flex: inherit;
-        font-size: 15px;
         border: 1px solid #ddd;
         border-radius: 6px;
         padding-left: 1em;
@@ -154,11 +167,13 @@
 }
 @media screen and (min-width:768px) and (max-width:1024px) {
     .Form-Item-Textarea {
+        width: 100%;
+        max-width: 100%;
         margin-top: 18px;
         margin-left: 0;
-        height: 200px;
+        height: 300px;
         flex: inherit;
-        font-size: 15px;
+        font-size: 28px;
     }
 }
 .Form-Btn {
@@ -206,6 +221,42 @@
     border-radius: 5px;
     background-color: #5bc8ac;
     color: white;
+}
+
+.form-button-wrapper {
+    width: 100%-40px; 
+    margin-left: 40px;
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .select-user-type-button {
+        width: 180px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 45px;
+        padding: 12px 8px;
+        border-radius: 5px;
+        background-color: lightgray;
+        color: darkgray;
+    }
+    
+    .select-user-type-button-activated {
+        width: 180px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 45px;
+        padding: 12px 8px;
+        border-radius: 5px;
+        background-color: #5bc8ac;
+        color: white;
+    }
+
+    .form-button-wrapper {
+        width: 100%; 
+        margin-left: 0px;
+    }
 }
 
 .submit-button {
@@ -266,4 +317,57 @@
     background-color: turquoise;
     background:linear-gradient(90deg, #141126 0%, #141126 45%, white 90%, white 100%); 
     opacity: 0.5;
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .submit-button {
+        width: 80%;
+        height: 50px;
+    }
+
+    .submit-button p {
+        z-index: 999;
+        position: absolute;
+        color: white;
+        width: 100%;
+        padding: 8px 0;
+        font-size: 36px;
+        box-shadow: 0px 0px 7px white;
+        border-bottom: 2.3px solid white;
+    }
+
+    .submit-button-overlayered-z5 {
+        width: 80%;
+        height: 50px;
+        background:linear-gradient(155deg, #141126 0%, #141126 60%, #FFC778 45%, #FFC778 100%); 
+        opacity: 0.6;
+    }
+    
+    .submit-button-overlayered-z4 {
+        width: 80%;
+        height: 50px;
+        background:linear-gradient(45deg, #141126 0%, #141126 75%, #58b4ea 50%, #58b4ea 100%); 
+        opacity: 0.5;
+    }
+    
+    .submit-button-overlayered-z3 {
+        width: 80%;
+        height: 50px;
+        background-color: turquoise;
+        opacity: 0.8;
+    }
+    
+    .submit-button-overlayered-z2 {
+        width: 80%;
+        height: 50px;
+        background:linear-gradient(90deg, #141126 0%, #141126 35%, turquoise 70%, turquoise 100%); 
+        opacity: 0.5;
+    }
+    
+    .submit-button-overlayered-z1 {
+        width: 80%;
+        height: 50px;
+        background:linear-gradient(90deg, #141126 0%, #141126 45%, white 90%, white 100%); 
+        opacity: 0.5;
+    }
 }
