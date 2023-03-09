@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../css/reset.css"/>
+  <link rel="stylesheet" href="../css/glitch.css"/>
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/form.css" />
+  <link rel="stylesheet" href="../css/container.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+  </style>
+  <meta name="description" content="『インディーズゲームで、世界を一歩ずつ、もっとおもしろく。』。個人開発エンジニア・ましゅうによる、インディーズゲーム製作プロジェクトの公式ホームページ。">
+</head>
+<body>
+  <canvas id="myCanvas"></canvas>
+  <div id="header" class="header">
+    <div class="wrapper">
+      <p class="logo glitch" data-text="HOGE GAMESTUDIO">
+        <a href="" onclick="myFunction('top')">HOGE GAMESTUDIO</h1>
+      </p>
+  
+      <nav>
+        <ul>
+          <li><a href="" onclick="myFunction('about')">ABOUT</a></li>
+          <li><a href="" onclick="myFunction('product')">PRODUCT</a></li>
+          <li><a href="" onclick="myFunction('contact')">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  
+  <div id="top">
+    <div class="container flex">
+      <div class="left">
+        <div class="flex-container">
+          <p>
+            インディーズゲームで<br>
+            世界を一歩ずつ、<br>
+            もっと面白く。
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="top-rotating-circle hidden">
+          <div class="inside-top-rotating-circle">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="about hidden">
+    <div class="container">
+      <div class="full-container">
+        <div class="top">
+          <p>ABOUT</p>
+        </div>
+        <div class="bottom">
+          <p class="hidden">
+            2021年11月に誕生し、2年間の充電期間を経て生まれ変わった、若きクリエイター・ましゅうによるインディーズゲーム製作プロジェクト。<br>
+            個人開発のスピード感と小回りの効きやすさを武器に、次世代の日本を代表する新規IP/キャラクターの創出及びメディアミックス展開を行っていく。
+          </p>
+          <p>
+            個人開発エンジニア・ましゅうによる、インディーズゲーム製作プロジェクト。<br>
+            個人開発のならではのスピード感と小回りの効きやすさを武器に、次世代の日本を代表する新規IP/キャラクターの創出及びメディアミックス展開を行っていく。
+          </p>
+          <div class="about-sns-list w-100">
+            <div class="sns-container">
+              <div id="sns-twitter" class="sns-icon">
+                <div class="middle-border"></div>
+                <a href="https://twitter.com/ASOBU_JP">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+              <div id="sns-instagram" class="sns-icon">
+                <i class="fa-brands fa-instagram sns-icon-preparing"></i>
+              </div>
+              <div id="sns-tiktok" class="sns-icon">
+                <i class="fa-brands fa-tiktok sns-icon-preparing"></i>
+              </div>
+              <div id="sns-youtube" class="sns-icon">
+                <i class="fa-brands fa-youtube sns-icon-preparing"></i>
+              </div>
+            </div>
+          </div>
+          <div class="top">
+            <p>MEMBER</p>
+          </div>
+          <div class="w-100">
+            <div class="sns-container">
+              <div class="member-introduction-area">
+                <div class="member-introduction-inside-area">
+                  <div class="w-100 flex-container">
+                    <div class="w-30">
+                      <img src="../resources/img/profile_Mathew.png">
+                    </div>
+                    <div class="w-70">
+                      <div class="profile-header">
+                          <h2>ましゅう／Mathew</h2>
+                      </div>
+                      <p class="profile-profile">
+                        1998年兵庫県生まれ。学生時代よりiOS開発/Web開発/ゲーム開発などに取り組み、2019年には自身初となるSwift製のiOS専用アプリゲームをリリースした。現在はUnity製ゲームの製作に取り組んでおり、その活動の延長線上として「HOGE GAMESTUDIO」を設立。2023年内のリリースに向けて鋭意製作中。
+                      </p>
+                      <table class="profile-sns-icon-list">
+                        <tr>
+                          <td>
+                            <a href="https://twitter.com/Tim_Leitch_2023">
+                              <i class="fa-brands fa-twitter"></i>
+                            </a>
+                          </td>
+                          <td></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="product" class="hidden">
+    <div class="container">
+      <div class="full-container">
+        <div class="top">
+          <p>PRODUCT</p>
+        </div>
+        <div class="bottom">
+          <div class="product_row">
+            <div class="product_01 product_cell" style="background-color: gray;">
+              <div id="pt01" class="product_cell_tag">コンセプトデザイン</div>
+            </div>
+            <div class="product_02 product_cell" style="background-color: red;">
+              <div id="pt02" class="product_cell_tag">ゲーム開発</div>
+              <div class="product_cell_movie_tag">
+                <a href="">
+                  <i class="fa-solid fa-video"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product_03 product_cell" style="background-color: gray;">
+              <div id="pt03" class="product_cell_tag">AR開発</div>
+              <div class="product_cell_movie_tag">
+                <a href="">
+                  <i class="fa-solid fa-video"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product_04 product_cell" style="background-color: red;">
+              <div id="pt04" class="product_cell_tag">ゲーム開発</div>
+            </div>
+            <div class="product_05 product_cell" style="background-color: gray;">
+              <div id="pt05" class="product_cell_tag">ジェネラティブアート×CGモデリング</div>
+              <div class="product_cell_movie_tag">
+                <a href="">
+                  <i class="fa-solid fa-video"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product_06 product_cell" style="background-color: red;">
+              <div id="pt06" class="product_cell_tag">ジェネラティブアート</div>
+            </div>
+            <div class="product_07 product_cell" style="background-color: red;">
+              <div id="pt07" class="product_cell_tag">CGモデリング</div>
+            </div>
+            <div class="product_08 product_cell" style="background-color: gray;">
+              <div id="pt08" class="product_cell_tag">CGモデリング</div>
+            </div>
+            <div class="product_09 product_cell" style="background-color: red;">
+              <div id="pt09" class="product_cell_tag">CGモデリング</div>
+            </div>
+            <div class="product_010 product_cell" style="background-color: red;">
+              <div id="pt10" class="product_cell_tag">CGモデリング（二次創作）</div>
+              <div class="product_cell_movie_tag">
+                <a href="">
+                  <i class="fa-solid fa-video"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product_011 product_cell" style="background-color: gray;">
+              <div id="pt11" class="product_cell_tag">AR開発（二次創作）</div>
+              <div class="product_cell_movie_tag">
+                <a href="">
+                  <i class="fa-solid fa-video"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product_012 product_cell" style="background-color: red;">
+              <div id="pt12" class="product_cell_tag">CGモデリング</div>
+            </div>
+            <div class="product_013 product_cell" style="background-color: red;">
+              <div id="pt13" class="product_cell_tag">ゲーム開発</div>
+              <div class="product_cell_external_tag">
+                <a href="">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product_014 product_cell" style="background-color: red;">
+              <div id="pt14" class="product_cell_tag">アプリ開発</div>
+              <div class="product_cell_external_tag">
+                <a href="">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product_015 product_cell" style="background-color: red;">
+              <div id="pt15" class="product_cell_tag">アプリ開発</div>
+              <div class="product_cell_external_tag">
+                <a href="">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="hidden">
+    <div class="container">
+      <div class="full-container">
+          <div class="top">
+            <p>CONTACT</p>
+          </div>
+          <div class="bottom">
+            <div class="contact_view">
+              <div class="Form">
+                <p>※当フォームはサンプルフォームですので、<br> バリデーションの表示/お問い合わせの送信は機能しません。</p>
+                <br>
+                <div class="Form-Item">
+                  <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+                  <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+                </div>
+                <div class="Form-Item">
+                  <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>種別</p>
+                  <div class="" style="width: 100%;">
+                    <div style="width: 100%-40px; margin-left: 40px;">
+                      <div class="flex-space-between">
+                        <div id="form-usertype-personal" class="select-user-type-button" onclick="selectUserTypeRadioButton('form-usertype-personal')">個人</div>
+                        <div id="form-usertype-official" class="select-user-type-button" onclick="selectUserTypeRadioButton('form-usertype-official')">法人</div>
+                        <div id="form-usertype-other" class="select-user-type-button" onclick="selectUserTypeRadioButton('form-usertype-other')">その他</div>
+                      </div>
+                    </div>
+                  </div>
+                  <input type="hidden" value="">
+                  <!-- <input type="text" class="Form-Item-Input" placeholder="例）株式会社令和"> -->
+                </div>
+                <div id="form-company-name" class="hidden Form-Item">
+                  <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>会社名</p>
+                  <input type="text" class="Form-Item-Input" placeholder="例）(株)HOGE OFFICIAL社">
+                </div>
+                <div class="Form-Item">
+                  <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+                  <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+                </div>
+                <div class="Form-Item">
+                  <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>お問合せ種別</p>
+                  <div class="" style="width: 100%;">
+                    <select  class="Form-Item-Input-2">
+                      <option value="">選択してください</option>
+                      <option value="">お仕事のご依頼について</option>
+                      <option value="">サービス提供内容について</option>
+                      <option value="">その他</option>
+                    </select>
+                  </div>
+                  <!-- <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000"> -->
+                </div>
+                <div class="Form-Item">
+                  <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+                  <textarea class="Form-Item-Textarea"></textarea>
+                </div>
+                <div class="center-container">
+                  <div class="submit-button">
+                    <p>送信する</p>
+                    <div class="submit-button-overlayered-z1">
+                      <div class="submit-button-overlayered-z2">
+                        <div class="submit-button-overlayered-z3">
+                          <div class="submit-button-overlayered-z4">
+                            <div class="submit-button-overlayered-z5">
+  
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+
+  <footer>
+    © 2021-2023, HOGE GAMESTUDIO All Rights Reserved.
+  </footer>
+
+  <meta charset="utf-8"/>
+  <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="../js/three.js"></script>
+  <script src="../js/header.js"></script>
+  <script src="../js/form.js"></script>
+</body>
+</html>
