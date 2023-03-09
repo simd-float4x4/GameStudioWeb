@@ -173,66 +173,66 @@
 }
 
 .product_02 {
-    background-image: url('./resources/img/products/02/002.png');
+    background-image: url('../resources/img/products/02/002.png');
     background-size: cover;
 }
 
 .product_03 {
-    background-image: url('/resources/img/products/03/003.png');
+    background-image: url('../resources/img/products/03/003.png');
     background-size: cover;
     background-position: center -160px;
 }
 
 .product_04 {
-    background-image: url('resources/img/products/04/004.png');
+    background-image: url('../resources/img/products/04/004.png');
     background-size: cover;
 }
 
 .product_05 {
-    background-image: url('resources/img/products/05/005.png');
+    background-image: url('../resources/img/products/05/005.png');
     background-size: cover;
 }
 
 .product_06 {
-    background-image: url('resources/img/products/06/006.png');
+    background-image: url('../resources/img/products/06/006.png');
     background-size: cover;
 }
 .product_07 {
-    background-image: url('resources/img/products/07/007.png');
+    background-image: url('../resources/img/products/07/007.png');
     background-size: cover;
 }
 
 .product_08 {
-    background-image: url('resources/img/products/08/008.png');
+    background-image: url('../resources/img/products/08/008.png');
     background-size: cover;
 }
 .product_09 {
-    background-image: url('resources/img/products/09/009.png');
+    background-image: url('../resources/img/products/09/009.png');
     background-size: cover;
 }
 .product_010 {
-    background-image: url('resources/img/products/10/010.png');
+    background-image: url('../resources/img/products/10/010.png');
     background-size: cover;
 }
 .product_011 {
-    background-image: url('resources/img/products/11/011.png');
+    background-image: url('../resources/img/products/11/011.png');
     background-size: cover;
 }
 .product_012 {
-    background-image: url('resources/img/products/12/012.png');
+    background-image: url('../resources/img/products/12/012.png');
     background-size: cover;
 }
 .product_013 {
-    background-image: url('resources/img/products/13/013.png');
+    background-image: url('../resources/img/products/13/013.png');
     background-size: cover;
 }
 .product_014 {
-    background-image: url('resources/img/products/14/014.png');
+    background-image: url('../resources/img/products/14/014.png');
     background-size: cover;
 }
 
 .product_015 {
-    background-image: url('resources/img/products/15/015.png');
+    background-image: url('../resources/img/products/15/015.png');
     background-size: cover;
 }
 
