@@ -163,10 +163,6 @@
 
 @media screen and (min-width:480px) {
 
-    .sns-container {
-        margin-top: 100px;
-    }
-
     #sns-twitter:before {
         top: -27px;
         left: -27px;
@@ -217,9 +213,6 @@
 
 @media screen and (min-width:768px) and (max-width:1024px) {
 
-    .sns-container {
-        margin-top: 100px;
-    }
 
     #sns-twitter:before {
         top: -27px;
