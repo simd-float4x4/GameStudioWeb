@@ -1,8 +1,10 @@
 .bottom .contact_view {
+    /* bottomでのtext-alignを強制的にアップデートするcssプロパティ */
     text-align: left !important;
 }
 
 .submit-button {
+    /* bottomでのtext-alignを強制的にアップデートするcssプロパティ */
     text-align: center !important;
 }
 
