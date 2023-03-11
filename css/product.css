@@ -18,7 +18,29 @@
     }
 }
 
+@media screen and (min-width:540px) {
+    .product_row {
+        display: grid;
+        grid-auto-rows: 13em;
+        grid-gap: 10px;
+        padding: 10px;
+        overflow: hidden;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media screen and (min-width:768px) and (max-width:1024px) {
+    .product_row {
+        display: grid;
+        grid-auto-rows: 16em;
+        grid-gap: 10px;
+        padding: 10px;
+        overflow: hidden;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width:1024px) {
     .product_row {
         display: grid;
         grid-auto-rows: 16em;
