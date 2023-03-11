@@ -6,7 +6,7 @@ text set in the data-text attribute. */
   position: relative;
   color: white;
   font-size: 4em;
-  letter-spacing: .5em;
+  width: 50%;
   /* Animation provies a slight random skew. Check bottom of doc
 	for more information on how to random skew. */
   animation: glitch-skew 1s infinite linear alternate-reverse;
