@@ -2,11 +2,11 @@
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
-    // サイズを指定
+    // 画面サイズを取得し、canvasに指定
     const width = document.documentElement.clientWidth;
     const height = document.documentElement.clientHeight;
 
-    // レンダラーを作成
+    // レンダラーを作成し、setする。
     const renderer = new THREE.WebGLRenderer({
         canvas: document.querySelector('#myCanvas')
     });
@@ -20,6 +20,7 @@ function init() {
     const camera = new THREE.PerspectiveCamera(45, width / height);
     camera.position.set(0, 0, +100);
 
+    // pointCloud, linesMesh, particleVelocityの宣言
     let pointCloud, linesMesh;
     let particleVelocity = [];
 
@@ -28,11 +29,11 @@ function init() {
     const particleCount = 550;
     // 描画領域の半径
     const r = 75;
-    // 線を消去する距離
+    // 2点間でこれだけ距離が離れたら線を消去する
     const connectionDistance = 14;
-    //最大速度の設定
+    //　頂点が動く際の最大速度の設定
     const maxVelocity = 0.2;
-    // 点のデザイン
+    // 点のデザイン（色、サイズ、blendモード、透明化ON）
     const particleMaterial = new THREE.PointsMaterial({
         color: 0xFFFFFF,
         size: 0.25,
@@ -51,20 +52,23 @@ function init() {
         particlePositions[i * 3 + 1] = Math.random() * r - r / 2.0;
         particlePositions[i * 3 + 2] = Math.random() * r - r / 2.0;
 
-        // Velocityの初期値を決定
+        // Velocity（頂点の重力）の初期値を決定
         particleVelocity[i] = new THREE.Vector3();
         particleVelocity[i].x = -1.0 + Math.random() * 2.0;
         particleVelocity[i].y = -1.0 + Math.random() * 2.0;
         particleVelocity[i].z = -1.0 + Math.random() * 2.0;
 
-        // 背面ベクトルを、maxVelocity/√3分だけ引き伸ばす。
+        // 角頂点の背面ベクトルを、maxVelocity/√3分だけ引き伸ばす。
         particleVelocity[i].multiplyScalar(maxVelocity / Math.sqrt(3.0));
     }
 
-    // BufferGeometryの点描画を行う。
+    // BufferGeometryで上記座標による描画を行う。
     const particles = new THREE.BufferGeometry();
+    // Positionに、頂点情報とBufferGeometryの参照方法を登録する。
     particles.setAttribute('position', new THREE.BufferAttribute(particlePositions, 3).setUsage(THREE.DynamicDrawUsage));
+    // pointCloudに情報を渡す。
     pointCloud = new THREE.Points(particles, particleMaterial);
+    // sceneにpointCloudを登録する。
     scene.add(pointCloud);
 
     // 

@@ -1,110 +1,112 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <link rel="stylesheet" href="css/reset.css"/>
-  <link rel="stylesheet" href="css/glitch.css"/>
-  <link rel="stylesheet" href="css/header.css" />
-  <link rel="stylesheet" href="css/form.css" />
-  <link rel="stylesheet" href="css/container.css" />
-  <link rel="stylesheet" href="css/footer.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-  </style>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="description" content="『インディーズゲームで、世界を一歩ずつ、もっとおもしろく。』。個人開発エンジニア・ましゅうによる、インディーズゲーム製作プロジェクトの公式ホームページ。">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/glitch.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/container.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="『インディーズゲームで、世界を一歩ずつ、もっとおもしろく。』。個人開発エンジニア・ましゅうによる、インディーズゲーム製作プロジェクトの公式ホームページ。">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
+
 <body>
-  <canvas id="myCanvas"></canvas>
-  <div id="header"></div>
-  <div id="contact">
-    <div class="container">
-      <div class="full-container">
-          <div class="top">
-            <p>CONTACT</p>
-          </div>
-          <div class="bottom">
-            <div class="contact_view">
-              <div class="Form">
-                <p class="common-p">※当フォームはサンプルフォームですので、バリデーションの表示/お問い合わせの送信は機能しません。</p>
-                <br>
-                <div class="Form-Item">
-                  <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
-                  <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+    <canvas id="myCanvas"></canvas>
+    <div id="header"></div>
+    <div id="contact">
+        <div class="container">
+            <div class="full-container">
+                <div class="top">
+                    <p>CONTACT</p>
                 </div>
-                <div class="Form-Item">
-                  <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>種別</p>
-                  <div class="w-100">
-                    <div class="form-button-wrapper">
-                      <div class="flex-space-between">
-                        <div id="form-usertype-personal" class="select-user-type-button" onclick="selectUserTypeRadioButton('form-usertype-personal')">個人</div>
-                        <div id="form-usertype-official" class="select-user-type-button" onclick="selectUserTypeRadioButton('form-usertype-official')">法人</div>
-                        <div id="form-usertype-other" class="select-user-type-button" onclick="selectUserTypeRadioButton('form-usertype-other')">その他</div>
-                      </div>
-                    </div>
-                  </div>
-                  <input type="hidden" value="">
-                  <!-- <input type="text" class="Form-Item-Input" placeholder="例）株式会社令和"> -->
-                </div>
-                <div id="form-company-name" class="hidden Form-Item">
-                  <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>会社名</p>
-                  <input type="text" class="Form-Item-Input" placeholder="例）(株)HOGE OFFICIAL社">
-                </div>
-                <div class="Form-Item">
-                  <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
-                  <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
-                </div>
-                <div class="Form-Item">
-                  <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>お問合せ種別</p>
-                  <div class="" style="width: 100%;">
-                    <select  class="Form-Item-Input-Dropdown">
+                <div class="bottom">
+                    <div class="contact_view">
+                        <div class="Form">
+                            <p class="common-p">※当フォームはサンプルフォームですので、バリデーションの表示/お問い合わせの送信は機能しません。</p>
+                            <br>
+                            <div class="Form-Item">
+                                <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+                                <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+                            </div>
+                            <div class="Form-Item">
+                                <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>種別</p>
+                                <div class="w-100">
+                                    <div class="form-button-wrapper">
+                                        <div class="flex-space-between">
+                                            <div id="form-usertype-personal" class="select-user-type-button" onclick="selectUserTypeRadioButton('form-usertype-personal')">個人</div>
+                                            <div id="form-usertype-official" class="select-user-type-button" onclick="selectUserTypeRadioButton('form-usertype-official')">法人</div>
+                                            <div id="form-usertype-other" class="select-user-type-button" onclick="selectUserTypeRadioButton('form-usertype-other')">その他</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" value="">
+                            </div>
+                            <div id="form-company-name" class="hidden Form-Item">
+                                <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>会社名</p>
+                                <input type="text" class="Form-Item-Input" placeholder="例）(株)HOGE OFFICIAL社">
+                            </div>
+                            <div class="Form-Item">
+                                <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+                                <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+                            </div>
+                            <div class="Form-Item">
+                                <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>お問合せ種別</p>
+                                <div class="" style="width: 100%;">
+                                    <select class="Form-Item-Input-Dropdown">
                       <option value="">選択してください</option>
                       <option value="">お仕事のご依頼について</option>
                       <option value="">サービス提供内容について</option>
                       <option value="">その他</option>
                     </select>
-                  </div>
-                  <!-- <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000"> -->
-                </div>
-                <div class="Form-Item">
-                  <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
-                  <textarea class="Form-Item-Textarea"></textarea>
-                </div>
-                <div class="center-container">
-                  <div class="submit-button">
-                    <p>送信する</p>
-                    <div class="submit-button-overlayered-z1">
-                      <div class="submit-button-overlayered-z2">
-                        <div class="submit-button-overlayered-z3">
-                          <div class="submit-button-overlayered-z4">
-                            <div class="submit-button-overlayered-z5">
-  
+                                </div>
                             </div>
-                          </div>
+                            <div class="Form-Item">
+                                <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+                                <textarea class="Form-Item-Textarea"></textarea>
+                            </div>
+                            <div class="center-container">
+                                <div class="submit-button">
+                                    <p>送信する</p>
+                                    <div class="submit-button-overlayered-z1">
+                                        <div class="submit-button-overlayered-z2">
+                                            <div class="submit-button-overlayered-z3">
+                                                <div class="submit-button-overlayered-z4">
+                                                    <div class="submit-button-overlayered-z5">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>                 
+                    <div id="footer"></div>
                 </div>
-              </div>
             </div>
-            <div id="footer"></div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  <script>
-    $(function(){
-        $('#header').load('header.html');
-        $('#footer').load('footer.html');
-    });
-  </script>
-  <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
-  <script src="js/three.js"></script>
-  <script src="js/form.js"></script>
-  <script src="js/header.js"></script>
+    </div>
+    <script>
+        $(function() {
+            $('#header').load('header.html');
+            $('#footer').load('footer.html');
+        });
+    </script>
+    <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
+    <script src="js/three.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/header.js"></script>
 </body>
+
 </html>
