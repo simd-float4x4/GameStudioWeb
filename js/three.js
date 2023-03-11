@@ -71,20 +71,23 @@ function init() {
     // sceneにpointCloudを登録する。
     scene.add(pointCloud);
 
-    // 
     const segments = particleCount * particleCount;
     let positions = new Float32Array(segments * 3);
     let colors = new Float32Array(segments * 3);
 
     // lineGeometryを実装する
     const lineGeometry = new THREE.BufferGeometry();
+    // Positionに、頂点情報とBufferGeometryの参照方法を登録する。
     lineGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3).setUsage(THREE.DynamicDrawUsage));
+    // Colorに、頂点情報とBufferGeometryの参照方法を登録する。
     lineGeometry.setAttribute('color', new THREE.BufferAttribute(colors, 3).setUsage(THREE.DynamicDrawUsage));
+    // LineMaterialに各種情報を登録する（頂点カラーの有効化、blendモード、透明度の設定）
     const lineMaterial = new THREE.LineBasicMaterial({
         vertexColors: true,
         blending: THREE.AdditiveBlending,
         transparent: true
     });
+    // linesMeshにGeometryとMaterialを登録し、sceneにaddする
     linesMesh = new THREE.LineSegments(lineGeometry, lineMaterial);
     scene.add(linesMesh);
 
@@ -107,7 +110,7 @@ function init() {
             particlePositions[i * 3 + 1] += particleVelocity[i].y;
             particlePositions[i * 3 + 2] += particleVelocity[i].z;
 
-            // 折り返し判定（PONGの要領でゴリ押す）
+            // 折り返し判定
             // TODO: rHarf = r / PIにすることで円周上の判定は作れるが、跳ね返し方がわからない
             if (particlePositions[i * 3] < -rHarf * 2.0 || particlePositions[i * 3] > rHarf * 2.0) {
                 particleVelocity[i].x *= -1;

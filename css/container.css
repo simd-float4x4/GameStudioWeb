@@ -207,7 +207,7 @@ body {
 
 .hidden {
     /* 強制的にアップデートするcssプロパティ */
-    display: hidden !important;
+    display: none !important;
 }
 
 .text-align-center {
