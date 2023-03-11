@@ -83,6 +83,16 @@
      }
 }
 
+@media screen and (min-width:1024px) {
+    .flex-container p {
+        line-height: 100px;
+        font-size: 60px;
+        padding: 12px;
+        font-weight: 600;
+        font-family: 'Oswald', sans-serif;
+     }
+}
+
 .flex-space-between {
     height: 40px;
     display: -webkit-flex;
