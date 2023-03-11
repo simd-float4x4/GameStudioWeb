@@ -205,6 +205,11 @@ body {
     text-align: justify;
 }
 
+.hidden {
+    /* 強制的にアップデートするcssプロパティ */
+    display: hidden !important;
+}
+
 .text-align-center {
     /* 強制的にアップデートするcssプロパティ */
     text-align: center !important;
