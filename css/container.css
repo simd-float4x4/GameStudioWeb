@@ -4,11 +4,11 @@ body {
 
 #myCanvas {
     z-index: -99999;
-    position:fixed;
-    top:0;
-    left:0;
-    width:100vw;
-    height:100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 .container {
@@ -21,8 +21,9 @@ body {
     height: calc(100vh - 75px);
     width: 100vw;
 }
+
 @media screen and (min-width:768px) and (max-width:1024px) {
-    .container .left{
+    .container .left {
         height: calc(100vh - 75px);
         width: 90vw;
     }
@@ -33,7 +34,7 @@ body {
     width: 20vw;
 }
 
-.flex{
+.flex {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -41,30 +42,29 @@ body {
     display: flex;
 }
 
-.flex-container{
+.flex-container {
     height: 100%;
     display: -webkit-flex;
     display: flex;
     align-items: center;
-}  
+}
 
 .flex-container p {
-   line-height: 40px;
-   font-size: 30px;
-   padding: 8px;
-   font-weight: 600;
-   font-family: 'Oswald', sans-serif;
+    line-height: 40px;
+    font-size: 30px;
+    padding: 8px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
 }
 
 @media screen and (min-width:360px) {
-    .flex-container p {   
+    .flex-container p {
         padding: 8px;
         font-size: 24px;
         font-weight: 600;
         font-family: 'Oswald', sans-serif;
-     }
+    }
 }
-
 
 @media screen and (min-width:480px) {
     .flex-container p {
@@ -73,7 +73,7 @@ body {
         padding: 16px;
         font-weight: 600;
         font-family: 'Oswald', sans-serif;
-     }
+    }
 }
 
 @media screen and (min-width:540px) {
@@ -83,7 +83,7 @@ body {
         padding: 8px;
         font-weight: 600;
         font-family: 'Oswald', sans-serif;
-     }
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
@@ -93,7 +93,7 @@ body {
         padding: 12px;
         font-weight: 600;
         font-family: 'Oswald', sans-serif;
-     }
+    }
 }
 
 @media screen and (min-width:1024px) {
@@ -103,7 +103,7 @@ body {
         padding: 12px;
         font-weight: 600;
         font-family: 'Oswald', sans-serif;
-     }
+    }
 }
 
 .flex-space-between {
@@ -121,10 +121,10 @@ body {
     height: 100%;
 }
 
-.hidden{
+.hidden {
     display: none !important;
- }
- 
+}
+
 .inside-container {
     color: white;
 }
@@ -170,7 +170,6 @@ body {
         border: none;
         border-bottom: 6px solid white;
     }
-
     .top {
         width: 100%;
         height: auto;
@@ -183,7 +182,6 @@ body {
     height: 70vh;
     text-align: center;
 }
-
 
 .w-30 {
     width: 50%;
@@ -206,7 +204,7 @@ body {
     width: 100%;
 }
 
-.common-p{
+.common-p {
     line-height: 1.5em;
     text-align: justify;
 }
@@ -222,6 +220,7 @@ body {
         text-align: justify;
     }
 }
+
 @media screen and (min-width:480px) {
     .common-p {
         font-size: 16px;
@@ -229,6 +228,7 @@ body {
         text-align: justify;
     }
 }
+
 @media screen and (min-width:540px) {
     .common-p {
         font-size: 16px;

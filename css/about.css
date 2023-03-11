@@ -2,9 +2,7 @@
     width: 566px;
     height: 350px;
     margin-bottom: 32px;
-    background: 
-        linear-gradient(135deg, #90BCD3 15%, transparent 0),
-        linear-gradient(-45deg, #90BCD3 5%, transparent 0);
+    background: linear-gradient(135deg, #90BCD3 15%, transparent 0), linear-gradient(-45deg, #90BCD3 5%, transparent 0);
     background-color: #54647C;
     border: 5px solid #90BCD3;
     box-shadow: 0px 0px 130px white;
@@ -55,8 +53,10 @@
     }
 }
 
-
-.profile-sns-icon-list a:link, .profile-sns-icon-list a:visited, .profile-sns-icon-list a:hover, .profile-sns-icon-list a:active {
+.profile-sns-icon-list a:link,
+.profile-sns-icon-list a:visited,
+.profile-sns-icon-list a:hover,
+.profile-sns-icon-list a:active {
     color: white;
     text-decoration: none;
 }
@@ -72,7 +72,7 @@
 #sns-twitter {
     position: relative;
 }
-  
+
 #sns-twitter:before {
     content: '';
     position: absolute;
@@ -106,9 +106,9 @@
     z-index: -1;
     animation: rotate-border 10s linear infinite;
     border-style: dashed;
-  }
-  
-  #sns-twitter .middle-border {
+}
+
+#sns-twitter .middle-border {
     position: absolute;
     top: -3px;
     left: -3px;
@@ -122,7 +122,7 @@
     border-radius: 50%;
     z-index: -1;
     animation: rotate-border 8s linear infinite;
-  }
+}
 
 @keyframes rotate-border {
     from {
@@ -132,7 +132,7 @@
         transform: rotate(360deg);
     }
 }
-  
+
 .sns-icon {
     width: 50px;
     height: 50px;
@@ -142,7 +142,10 @@
     position: relative;
 }
 
-.sns-icon a:link, .sns-icon a:visited, .sns-icon a:hover, .sns-icon a:active {
+.sns-icon a:link,
+.sns-icon a:visited,
+.sns-icon a:hover,
+.sns-icon a:active {
     color: white;
     text-decoration: none;
 }
@@ -154,7 +157,7 @@
     align-items: center;
     top: 50%;
     left: 50%;
-    transform : translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .sns-icon-preparing {
@@ -162,7 +165,6 @@
 }
 
 @media screen and (min-width:480px) {
-
     #sns-twitter:before {
         top: -27px;
         left: -27px;
@@ -174,7 +176,6 @@
         border-bottom: 10px solid #1DA1F2;
         border-left: 10px solid #1DA1F2;
     }
-    
     #sns-twitter:after {
         top: -40px;
         left: -40px;
@@ -186,9 +187,8 @@
         border-bottom: 5px solid #1DA1F2;
         border-left: 5px solid #1DA1F2;
         border-style: dashed;
-      }
-      
-      #sns-twitter .middle-border {
+    }
+    #sns-twitter .middle-border {
         top: -3px;
         left: -3px;
         right: -3px;
@@ -198,8 +198,7 @@
         border-right: 3px solid #1DA1F2;
         border-bottom: 3px solid #1DA1F2;
         border-left: 3px solid #1DA1F2;
-      }
-      
+    }
     .sns-icon {
         width: 100px;
         height: 100px;
@@ -210,10 +209,7 @@
     }
 }
 
-
 @media screen and (min-width:768px) and (max-width:1024px) {
-
-
     #sns-twitter:before {
         top: -27px;
         left: -27px;
@@ -225,7 +221,6 @@
         border-bottom: 10px solid #1DA1F2;
         border-left: 10px solid #1DA1F2;
     }
-    
     #sns-twitter:after {
         top: -40px;
         left: -40px;
@@ -237,9 +232,8 @@
         border-bottom: 5px solid #1DA1F2;
         border-left: 5px solid #1DA1F2;
         border-style: dashed;
-      }
-      
-      #sns-twitter .middle-border {
+    }
+    #sns-twitter .middle-border {
         top: -3px;
         left: -3px;
         right: -3px;
@@ -249,8 +243,7 @@
         border-right: 3px solid #1DA1F2;
         border-bottom: 3px solid #1DA1F2;
         border-left: 3px solid #1DA1F2;
-      }
-      
+    }
     .sns-icon {
         width: 100px;
         height: 100px;
@@ -262,11 +255,9 @@
 }
 
 @media screen and (min-width:540px) {
-
     .sns-container {
         margin-top: 100px;
     }
-
     #sns-twitter:before {
         top: -23px;
         left: -23px;
@@ -278,7 +269,6 @@
         border-bottom: 5px solid #1DA1F2;
         border-left: 5px solid #1DA1F2;
     }
-    
     #sns-twitter:after {
         top: -13px;
         left: -13px;
@@ -290,9 +280,8 @@
         border-bottom: 3px solid #1DA1F2;
         border-left: 3px solid #1DA1F2;
         border-style: dashed;
-      }
-      
-      #sns-twitter .middle-border {
+    }
+    #sns-twitter .middle-border {
         top: -5px;
         left: -5px;
         right: -5px;
@@ -302,9 +291,8 @@
         border-right: 1px solid #1DA1F2;
         border-bottom: 1px solid #1DA1F2;
         border-left: 1px solid #1DA1F2;
-      }
-
-      .sns-icon {
+    }
+    .sns-icon {
         width: 50px;
         height: 50px;
         font-size: 50px;
