@@ -118,7 +118,7 @@
 
 .top {
     width: 100%;
-    height: calc(30vh - 75px);
+    height: 150px;
 }
 
 .top p {
@@ -187,6 +187,29 @@
     line-height: 1.5em;
     text-align: justify;
 }
+
+@media screen and (min-width:360px) {
+    .common-p {
+        font-size: 16px;
+        line-height: 1.2em;
+        text-align: justify;
+    }
+}
+@media screen and (min-width:480px) {
+    .common-p {
+        font-size: 16px;
+        line-height: 1.2em;
+        text-align: justify;
+    }
+}
+@media screen and (min-width:540px) {
+    .common-p {
+        font-size: 16px;
+        line-height: 1.2em;
+        text-align: justify;
+    }
+}
+
 @media screen and (min-width:768px) and (max-width:1024px) {
     .common-p {
         font-size: 30px;
